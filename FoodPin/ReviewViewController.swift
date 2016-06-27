@@ -44,8 +44,7 @@ class ReviewViewController: UIViewController {
         goodButton.transform = CGAffineTransformConcat(scale, translate)
         greatButton.transform = CGAffineTransformConcat(scale, translate)
 
-        // 摘录来自: Simon Ng. “Beginning iOS 9 Programming with Swift”。 iBooks.
-
+       
         // Do any additional setup after loading the view.
     }
 

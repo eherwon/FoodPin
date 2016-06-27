@@ -20,7 +20,8 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //Enabling self sizing cells (and you need to change the lines to 0 in the Attribute Inspector).
+        //You also to add two constraints incldes the Top/Bottom spacce to container margin.
         tableView.estimatedRowHeight = 36.0
         tableView.rowHeight = UITableViewAutomaticDimension
 

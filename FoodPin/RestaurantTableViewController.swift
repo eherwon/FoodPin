@@ -24,8 +24,8 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
             
-            tableView.estimatedRowHeight = 36.0
-            tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 36.0
+        tableView.rowHeight = UITableViewAutomaticDimension
 
         // Remove the title of the back button
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
@@ -192,6 +192,7 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // Passing Data Using Segues
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showRestaurantDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {

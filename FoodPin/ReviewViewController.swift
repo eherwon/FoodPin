@@ -33,11 +33,14 @@ class ReviewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Dark)
+        // apply a blurring effect, you only need to do is to add a UIVisualEffectView object with the blurring effect which is treated to be a subview of the ImagineView
+        // blur the bacground image
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
         blurEffectView.frame = view.bounds
         backgroundImageView.addSubview(blurEffectView)
+        
+        
         let scale = CGAffineTransformMakeScale(0.0, 0.0)
         let translate = CGAffineTransformMakeTranslation(0, 500)
         dislikeButton.transform = CGAffineTransformConcat(scale, translate)
